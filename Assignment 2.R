@@ -4,6 +4,11 @@ library(tidyverse)
 
 #Accessing subfolder of Covid-19 Data and us-states.csv
 library(readr)
+
+#   Failure to clone/link COVID-19 repo: -10 
+
+#correct way to read csv for future reference
+us_states <- read.csv(here("covid-19-data","us-states.csv")) 
 us_states <- read_csv("covid-19-data/us-states.csv")
 
 #filter the state to only be Pennsylvania
